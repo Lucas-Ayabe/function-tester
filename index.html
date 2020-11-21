@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Function Tester</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <style>
+            #result {
+                display: block;
+                overflow-y: auto;
+                white-space: pre-wrap;
+                padding: 1em;
+                border-radius: 3px;
+                background: #222;
+                font-size: inherit;
+                font-family: inherit;
+                color: var(--ui-background);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container flip">
+            <div class="inner">
+                <form action="" class="card flow front" style="--flow: 1.5em">
+                    <h1 class="text:center">Math function tester</h1>
+
+                    <div>
+                        <div class="field flow" style="--flow: 0.5em">
+                            <label class="label" for="expression"
+                                >Expression</label
+                            >
+                            <input
+                                class="input"
+                                type="text"
+                                name="expression"
+                                id="expression"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="field flow" style="--flow: 0.5em">
+                            <label class="label" for="values"
+                                >Values (separated by semicolons)</label
+                            >
+                            <input
+                                class="input"
+                                type="text"
+                                name="values"
+                                id="values"
+                            />
+                        </div>
+                    </div>
+
+                    <button
+                        id="calculate"
+                        type="button"
+                        class="button -primary"
+                    >
+                        Calculate
+                    </button>
+                </form>
+
+                <div class="card flow back">
+                    <div class="flow text:center">
+                        <button id="back" type="button" class="button -primary">
+                            Voltar
+                        </button>
+                        <h1 style="--flow: 0.5em">Resultado</h1>
+                    </div>
+                    <code id="result"></code>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
